@@ -48,7 +48,6 @@ public class Main {
 		gui.setupUi(main);
         main.show();
 		
-		QApplication.execStatic();
 		int fgrenz = 6;
 		
 		while(true) {
@@ -90,8 +89,7 @@ public class Main {
 			gui.tisch3.setValue(100);
 			gui.tisch4.setValue(100);
 			gui.tisch5.setValue(100);
-
-
+			
         }
 		
 	}
