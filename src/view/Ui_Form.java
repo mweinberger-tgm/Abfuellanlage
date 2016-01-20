@@ -128,7 +128,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch1 = new QProgressBar(horizontalLayoutWidget_2);
         tisch1.setObjectName("tisch1");
-        tisch1.setValue(0);
+        tisch1.setValue(100);
 
         horizontalLayout_4.addWidget(tisch1);
 
@@ -145,7 +145,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch2 = new QProgressBar(horizontalLayoutWidget_2);
         tisch2.setObjectName("tisch2");
-        tisch2.setValue(0);
+        tisch2.setValue(100);
 
         horizontalLayout_4.addWidget(tisch2);
 
@@ -162,7 +162,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch3 = new QProgressBar(horizontalLayoutWidget_2);
         tisch3.setObjectName("tisch3");
-        tisch3.setValue(0);
+        tisch3.setValue(100);
 
         horizontalLayout_4.addWidget(tisch3);
 
@@ -179,7 +179,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch4 = new QProgressBar(horizontalLayoutWidget_2);
         tisch4.setObjectName("tisch4");
-        tisch4.setValue(0);
+        tisch4.setValue(100);
 
         horizontalLayout_4.addWidget(tisch4);
 
@@ -196,7 +196,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch5 = new QProgressBar(horizontalLayoutWidget_2);
         tisch5.setObjectName("tisch5");
-        tisch5.setValue(0);
+        tisch5.setValue(100);
 
         horizontalLayout_4.addWidget(tisch5);
 

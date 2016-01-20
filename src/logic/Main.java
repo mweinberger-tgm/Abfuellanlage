@@ -1,10 +1,7 @@
 package logic;
 
-import java.io.IOException;
-import java.net.Socket;
-
-import com.trolltech.qt.gui.*;
-
+import com.trolltech.qt.gui.QApplication;
+import com.trolltech.qt.gui.QWidget;
 import view.Ui_Form;
 
 public class Main {
@@ -52,19 +49,49 @@ public class Main {
         main.show();
 		
 		QApplication.execStatic();
-		int fmax = 20;
+		int fgrenz = 5;
 		
 		while(true) {
 			for(int x = 20; x > 0; x--)	{
 				Thread t = new Thread();
         		try {
 					t.sleep(1000);
+					gui.dajma.display(x - 1);
+					gui.tisch1.setValue(gui.tisch1.value() - 5);
+					gui.tisch2.setValue(gui.tisch2.value() - 5);
+					gui.tisch3.setValue(gui.tisch3.value() - 5);
+					gui.tisch4.setValue(gui.tisch4.value() - 5);
+					gui.tisch5.setValue(gui.tisch5.value() - 5);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-        		
 			}
+
+			gui.bier.setValue(gui.bier.value() - 3);
+			gui.rum.setValue(gui.rum.value() - 4);
+			gui.vodka.setValue(gui.rum.value() - 4);
+			gui.wein.setValue(gui.wein.value() - 4);
+			gui.bier.setValue(gui.bier.value() - 3);
+
+
+			if (gui.bier.value() < fgrenz)
+				gui.bier.setValue(90);
+			if (gui.rum.value() < fgrenz)
+				gui.rum.setValue(90);
+			if (gui.vodka.value() < fgrenz)
+				gui.vodka.setValue(90);
+			if (gui.wein.value() < fgrenz)
+				gui.wein.setValue(90);
+
+
+			gui.tisch1.setValue(100);
+			gui.tisch2.setValue(100);
+			gui.tisch3.setValue(100);
+			gui.tisch4.setValue(100);
+			gui.tisch5.setValue(100);
+
+
         }
 		
 	}
