@@ -1,3 +1,5 @@
+package view;
+
 /********************************************************************************
  ** Form generated from reading ui file 'Abfuell_GUI.jui'
  **
