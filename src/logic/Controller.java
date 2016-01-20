@@ -9,15 +9,32 @@ public class Controller {
 	private ArrayList<Lieferant> lieferanten;
 
 	public void addTank(Tank tank) {
-
+		tanks.add(tank);
 	}
 
 	public void addLieferant(Lieferant lieferant) {
-
+		lieferanten.add(lieferant);
 	}
 
-	public void ausschenken(float menge, String name) {
+	public boolean ausschenken(float menge, String name) {
 
+
+		if ()
+
+			return true;
+	}
+
+	public boolean nachbestellen(String name) {
+		int index = 0;
+		for (Lieferant lieferant : lieferanten) {
+			if (lieferant.getName().equals(name))
+				break;
+			else
+				index += 1;
+		}
+
+
+		return true;
 	}
 
 }
