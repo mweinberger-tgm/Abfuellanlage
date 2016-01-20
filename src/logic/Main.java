@@ -49,7 +49,7 @@ public class Main {
         main.show();
 		
 		QApplication.execStatic();
-		int fgrenz = 5;
+		int fgrenz = 6;
 		
 		while(true) {
 			for(int x = 20; x > 0; x--)	{
@@ -75,13 +75,13 @@ public class Main {
 			gui.bier.setValue(gui.bier.value() - 3);
 
 
-			if (gui.bier.value() < fgrenz)
+			if (gui.bier.value() <= fgrenz)
 				gui.bier.setValue(90);
-			if (gui.rum.value() < fgrenz)
+			if (gui.rum.value() <= fgrenz)
 				gui.rum.setValue(90);
-			if (gui.vodka.value() < fgrenz)
+			if (gui.vodka.value() <= fgrenz)
 				gui.vodka.setValue(90);
-			if (gui.wein.value() < fgrenz)
+			if (gui.wein.value() <= fgrenz)
 				gui.wein.setValue(90);
 
 
