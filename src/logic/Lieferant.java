@@ -25,8 +25,12 @@ public class Lieferant implements Runnable {
 		this.name = name;
 	}
 
-	private void liefern(float liefermenge) {
-
+	public void liefern(float liefermenge, String name) {
+		for (ClientListener cl : cml) {
+			if (cl.getTank().getName().equals(name)) {
+				cl.getTank().getOutputStream().println(liefermenge);
+			}
+		}
 	}
 
 	public void run() {

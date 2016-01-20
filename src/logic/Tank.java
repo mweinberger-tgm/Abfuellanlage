@@ -55,6 +55,15 @@ public class Tank {
 
 	public void nachbestellen() {
 		getOutputStream().println(this.name + "," + (maxFuellung - fuellstand));
+		String line = "";
+		try {
+			// Falls eine Zeile uebertragen wurde, wird sie in das Log Fenster geschrieben
+			while ((line = this.in.readLine()) != null) {
+				fuellstand += Float.parseFloat(line);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public boolean ausschenken(float menge) {

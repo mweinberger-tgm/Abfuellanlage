@@ -22,9 +22,9 @@ public class ClientListener implements Runnable {
 			String line;
 			// Wenn ein Client eine Nachricht an den Server sendet, sendet der Server diese an alle Client weiter
 			while ((line = this.t.getInputStream().readLine()) != null) {
-
-				//this.server.sendText(line);
-				System.out.println(line);
+				String[] ln = line.split(",");
+				this.l.liefern(Float.parseFloat(ln[1]), ln[0]);
+				// System.out.println(line);
 			}
 		} catch (IOException e) {
 			// Wenn ein Client die Verbindung trennt, trennt der Server sie auch
