@@ -86,4 +86,8 @@ public class Tank {
 		return fuellstand;
 	}
 
+	public void setFuellstand(float fuellstand) {
+		this.fuellstand = fuellstand;
+	}
+
 }
