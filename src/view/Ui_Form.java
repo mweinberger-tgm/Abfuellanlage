@@ -1,3 +1,5 @@
+package view;
+
 /********************************************************************************
  ** Form generated from reading ui file 'Abfuell_GUI.jui'
  **
@@ -59,7 +61,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         bier = new QProgressBar(horizontalLayoutWidget);
         bier.setObjectName("bier");
-        bier.setValue(24);
+        bier.setValue(7);
 
         horizontalLayout.addWidget(bier);
 
@@ -76,7 +78,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         rum = new QProgressBar(horizontalLayoutWidget);
         rum.setObjectName("rum");
-        rum.setValue(24);
+        rum.setValue(7);
 
         horizontalLayout.addWidget(rum);
 
@@ -93,7 +95,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         vodka = new QProgressBar(horizontalLayoutWidget);
         vodka.setObjectName("vodka");
-        vodka.setValue(24);
+        vodka.setValue(7);
 
         horizontalLayout.addWidget(vodka);
 
@@ -110,7 +112,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         wein = new QProgressBar(horizontalLayoutWidget);
         wein.setObjectName("wein");
-        wein.setValue(24);
+        wein.setValue(7);
 
         horizontalLayout.addWidget(wein);
 
@@ -126,7 +128,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch1 = new QProgressBar(horizontalLayoutWidget_2);
         tisch1.setObjectName("tisch1");
-        tisch1.setValue(24);
+        tisch1.setValue(0);
 
         horizontalLayout_4.addWidget(tisch1);
 
@@ -143,7 +145,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch2 = new QProgressBar(horizontalLayoutWidget_2);
         tisch2.setObjectName("tisch2");
-        tisch2.setValue(24);
+        tisch2.setValue(0);
 
         horizontalLayout_4.addWidget(tisch2);
 
@@ -160,7 +162,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch3 = new QProgressBar(horizontalLayoutWidget_2);
         tisch3.setObjectName("tisch3");
-        tisch3.setValue(24);
+        tisch3.setValue(0);
 
         horizontalLayout_4.addWidget(tisch3);
 
@@ -177,7 +179,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch4 = new QProgressBar(horizontalLayoutWidget_2);
         tisch4.setObjectName("tisch4");
-        tisch4.setValue(24);
+        tisch4.setValue(0);
 
         horizontalLayout_4.addWidget(tisch4);
 
@@ -194,13 +196,14 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
         tisch5 = new QProgressBar(horizontalLayoutWidget_2);
         tisch5.setObjectName("tisch5");
-        tisch5.setValue(24);
+        tisch5.setValue(0);
 
         horizontalLayout_4.addWidget(tisch5);
 
         dajma = new QLCDNumber(Form);
         dajma.setObjectName("dajma");
         dajma.setGeometry(new QRect(220, 230, 551, 131));
+        dajma.display(20);
         retranslateUi(Form);
 
         Form.connectSlotsByName();
@@ -208,7 +211,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
     void retranslateUi(QWidget Form)
     {
-        Form.setWindowTitle(com.trolltech.qt.core.QCoreApplication.translate("Form", "Form", null));
+        Form.setWindowTitle(com.trolltech.qt.core.QCoreApplication.translate("Form", "Abfuellanlage", null));
         label_4.setText(com.trolltech.qt.core.QCoreApplication.translate("Form", "Bier:", null));
         label_3.setText(com.trolltech.qt.core.QCoreApplication.translate("Form", "Rum:", null));
         label_2.setText(com.trolltech.qt.core.QCoreApplication.translate("Form", "Vodka:", null));

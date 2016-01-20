@@ -47,11 +47,25 @@ public class Main {
 		QWidget main = new QWidget();
 		
 		Ui_Form gui = new Ui_Form();
-		gui.setupUi(main);
 		
+		gui.setupUi(main);
         main.show();
 		
 		QApplication.execStatic();
+		int fmax = 20;
+		
+		while(true) {
+			for(int x = 20; x > 0; x--)	{
+				Thread t = new Thread();
+        		try {
+					t.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+        		
+			}
+        }
 		
 	}
 }
