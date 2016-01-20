@@ -82,4 +82,8 @@ public class Tank {
 		return name;
 	}
 
+	public float getFuellstand() {
+		return fuellstand;
+	}
+
 }
