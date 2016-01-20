@@ -54,19 +54,21 @@ public class Tank {
 	}
 
 	public void nachbestellen() {
-
+		getOutputStream().println(this.name + "," + (maxFuellung - fuellstand));
 	}
 
-	public void ausschenken(float menge) {
+	public boolean ausschenken(float menge) {
 		if (maxFuellung > menge) {
 			if ((fuellstand - menge) > 0) {
 				fuellstand -= menge;
 				if (checkNachBestellen())
 					nachbestellen();
+				return true;
 			} else
 				nachbestellen();
 			fuellstand -= menge;
 		}
+		return false;
 	}
 
 	private boolean checkNachBestellen() {

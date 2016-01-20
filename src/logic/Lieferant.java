@@ -51,4 +51,8 @@ public class Lieferant implements Runnable {
 		return this.name;
 	}
 
+	public List<ClientListener> getConnections() {
+		return this.cml;
+	}
+
 }
