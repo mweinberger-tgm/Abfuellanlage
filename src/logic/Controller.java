@@ -19,9 +19,12 @@ public class Controller {
 	public boolean ausschenken(float menge, String name) {
 
 
-		if ()
-
+		if (tanks.get(tanks.indexOf(name)).getFuellstand() >= menge)	{
+			tanks.get(tanks.indexOf(name)).setFuellstand(tanks.get(tanks.indexOf(name)).getFuellstand() - menge);
 			return true;
+		}
+
+			return false;
 	}
 
 	public boolean nachbestellen(String name) {
