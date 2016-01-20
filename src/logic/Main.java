@@ -31,9 +31,9 @@ public class Main {
 				System.out.println("Server found. Connection established.");
 			} catch (IOException e) {
 				System.out.println("No server at the given remote address found. Setting up server.");
+				new Thread(new Lieferant("localhost", port, name)).start(); // Startet den Server
 				try {
-					new Thread(new Lieferant("localhost", port, name)).start(); // Startet den Server
-					new ClientView(new Tank(new Socket("localhost", port))); // Erstellt einen neuen Client und eine GUI, verbindet sich zu localhost da hier nun der Server laeuft
+					new ClientView(new Client(new Socket("localhost", port))); // Erstellt einen neuen Client und eine GUI, verbindet sich zu localhost da hier nun der Server laeuft
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
@@ -45,8 +45,6 @@ public class Main {
 
 		QApplication.initialize(args);
 		QWidget main = new QWidget();
-		
-		main.setWindowTitle("Abfüllanlage");
 		
 		Ui_Form gui = new Ui_Form();
 		gui.setupUi(main);

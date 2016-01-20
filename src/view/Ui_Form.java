@@ -65,7 +65,7 @@ public class Ui_Form implements com.trolltech.qt.QUiForm<QWidget>
 
     void retranslateUi(QWidget Form)
     {
-        Form.setWindowTitle(com.trolltech.qt.core.QCoreApplication.translate("Form", "Form", null));
+        Form.setWindowTitle(com.trolltech.qt.core.QCoreApplication.translate("Form", "Abfüllanlage", null));
     } // retranslateUi
 
 }
